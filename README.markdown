@@ -9,15 +9,6 @@ Requirements
 
 Installation
 ============
-Either 
-
 1. download the repo
-2. unpackage it
-3. rename the folder to kitty.wdgt
-4. open in Finder
-
-or
-
-1. clone the repo
-2. open it in Finder
-
+2. open the folder
+3. double click on kitty.wdgt
