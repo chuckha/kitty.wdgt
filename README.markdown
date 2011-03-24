@@ -11,13 +11,13 @@ Installation
 ============
 Either 
 
-* download the repo
-* unpackage it
-* rename the folder to kitty.wdgt
-* open in Finder
+1 download the repo
+2 unpackage it
+3 rename the folder to kitty.wdgt
+4 open in Finder
 
 or
 
-* clone the repo
-* open it in Finder
+1 clone the repo
+2 open it in Finder
 
