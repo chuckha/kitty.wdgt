@@ -5,5 +5,9 @@ You can get look at specific sizes or have a random kitty displayed for you.
 
 Installation
 ============
+Either download the repo, unpackage it, rename the folder to kitty.wdgt, then open in Finder
+
+or
+
 Just clone the repo, open it in Finder and it will install to your dashboard!
 
