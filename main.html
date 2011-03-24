@@ -1,0 +1,59 @@
+<html>
+    <head></head>
+    <title></title>
+    <script type="text/javascript">
+        function getKitty() {
+            var minWidth = 250;
+            var lineHeight = parseInt(document.getElementById('controls').offsetHeight);
+            var width = parseInt(document.getElementById('width').value);
+            var height = parseInt(document.getElementById('height').value);
+            setHeight = height + lineHeight;
+            document.getElementById('kitty').src = "please_wait.png";
+            document.getElementById('kitty').src = "http://placekitten.com/" + width.toString() + "/" + height.toString(); 
+
+
+            if (width < minWidth) {
+                window.resizeTo(minWidth, setHeight);
+            } else {
+                window.resizeTo(width, setHeight);
+            }
+        };
+
+        function random() {
+            var width = Math.floor(Math.random()*998 + 1);
+            var height = Math.floor(Math.random() * 998 + 1);
+            document.getElementById('width').value = width;
+            document.getElementById('height').value = height;
+        };
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background: #aaa;
+        }
+        input.input {
+            width: 30px;
+        }
+        input.button {
+            width: 60px;
+        }
+        div {
+            text-align: center;
+        }
+        div#controls {
+            padding-bottom: 3px;
+            /* cadet blue :) */
+            background: #5F9EA0;
+        }
+    </style>
+    <body>
+        <div id="controls">
+            <input class="input" id="width" type="text" value="200" maxlength="3" /> x <input class="input" id="height" type="text" value="300" maxlength="3" />
+            <input class="button" type="button" onClick="getKitty();" value="KITTY!" />
+            <input class="button" type="button" onClick="random();" value="random" />
+        </div>
+        <div id="image">
+            <img id="kitty" src="http://placekitten.com/200/300/" />
+        </div>
+    </body>
+</html>
