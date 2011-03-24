@@ -10,6 +10,7 @@ Requirements
 Installation
 ============
 Either 
+
 * download the repo
 * unpackage it
 * rename the folder to kitty.wdgt
